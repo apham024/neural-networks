@@ -7,11 +7,11 @@ import numpy as np
 from pylab import *
 
 network_counter = 0
+NUM_MODELS = 4
+NUM_EPOCHS = 200
 hidden_layer_list = [10, 1000]
 learning_rate_list = [1.0, 3.0]
 mini_batch_list = [100, 500, 5000]
-NUM_MODELS = 4
-NUM_EPOCHS = 200
 
 def read_data():
     # getting data
