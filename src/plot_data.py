@@ -48,12 +48,3 @@ def main():
 
 if __name__ == "__main__":
      main()
-
-'''
-due Friday of finals week:
-analysis of the relationship between HU, LR, MB
-intro (1 page): describe the neural network and how it learns the dataset, what they are in general
-(1 page each for HU, LR, MB): what they are, the effect they have on the networks, too few vs too much
-1 paragraph defining, 2+ paragraphs after data manipulation and what happened for each
-manipulate HU, LR, MB one at a time, include a figure with that data
-'''
