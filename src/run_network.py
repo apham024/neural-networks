@@ -1,4 +1,3 @@
-
 import sys
 import mnist_loader
 import network
@@ -15,12 +14,11 @@ print
 NUM_INPUT_UNITS = 784
 NUM_OUTPUT_UNITS = 10
 
-NUM_MODELS = 4
-NUM_EPOCHS = 200
-hidden_layer_list = [10, 1000]
-learning_rate_list = [1.0, 3.0]
-mini_batch_list = [100, 500, 5000]
-
+NUM_EPOCHS = 100
+NUM_MODELS = 2
+hidden_layer_list = [2, 5, 30, 100, 1000]
+learning_rate_list = [3.0]
+mini_batch_list = [10]
 total_networks = (len(hidden_layer_list) * len(learning_rate_list) * len(mini_batch_list)) * NUM_MODELS
 
 def run_network():
@@ -28,7 +26,7 @@ def run_network():
 
     header_list = []
 
-    f = open('TEST_FILE.csv', 'w')
+    f = open('HU_TEST_FILE.csv', 'w')
     f.write("HU,LR,MB,Model#")
     for i in range(NUM_EPOCHS + 1):
         f.write(",E" + str(i))
